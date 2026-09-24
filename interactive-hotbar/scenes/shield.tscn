@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://nebhusgswemh"]
+
+[ext_resource type="Texture2D" uid="uid://c5bgcnh8kgdqk" path="res://assets/shield.jpg" id="1_vtru8"]
+
+[node name="Shield" type="Sprite2D" unique_id=629789935]
+scale = Vector2(0.14317673, 0.14317673)
+texture = ExtResource("1_vtru8")
+centered = false

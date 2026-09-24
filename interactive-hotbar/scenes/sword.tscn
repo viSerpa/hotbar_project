@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b1lqrvh7u3fmj"]
+
+[ext_resource type="Texture2D" uid="uid://c1kwlklkwvee" path="res://assets/sword.png" id="1_ycbs3"]
+
+[node name="Sword" type="Sprite2D" unique_id=152801133]
+scale = Vector2(0.07441861, 0.063745014)
+texture = ExtResource("1_ycbs3")
+centered = false

@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://cxug3otjeoosm"]
+
+[ext_resource type="Script" uid="uid://c1e1oaku1hul4" path="res://scripts/items.gd" id="1_cdcin"]
+
+[node name="Items" type="Control" unique_id=99615443 node_paths=PackedStringArray("sword_button", "bow_button", "shield_button")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cdcin")
+sword_button = NodePath("SwordButton")
+bow_button = NodePath("BowButton")
+shield_button = NodePath("ShieldButton")
+
+[node name="SwordButton" type="Button" parent="." unique_id=811174368]
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+
+[node name="SwordLabel" type="Label" parent="SwordButton" unique_id=590097418]
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+text = "Sword"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BowButton" type="Button" parent="." unique_id=428538806]
+layout_mode = 0
+offset_left = 128.0
+offset_right = 192.0
+offset_bottom = 64.0
+
+[node name="BowLabel" type="Label" parent="BowButton" unique_id=798582426]
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+text = "Bow"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ShieldButton" type="Button" parent="." unique_id=884763146]
+layout_mode = 0
+offset_left = 256.0
+offset_right = 320.0
+offset_bottom = 64.0
+
+[node name="ShieldLabel" type="Label" parent="ShieldButton" unique_id=532789822]
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+text = "Shield"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="SwordButton" to="." method="_on_sword_button_pressed"]
+[connection signal="pressed" from="BowButton" to="." method="_on_bow_button_pressed"]
+[connection signal="pressed" from="ShieldButton" to="." method="_on_shield_button_pressed"]

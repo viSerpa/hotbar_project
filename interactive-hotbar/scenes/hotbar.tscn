@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dj5hjst2786g8"]
+
+[ext_resource type="Script" uid="uid://byagh77vnx8is" path="res://scripts/hotbar.gd" id="1_mjyg7"]
+[ext_resource type="PackedScene" uid="uid://l3bvnkm3bbur" path="res://scenes/hotbar_box.tscn" id="2_4qkdb"]
+
+[node name="Hotbar" type="Control" unique_id=541154035]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mjyg7")
+hotbar_box_scene = ExtResource("2_4qkdb")
+box_amount = 8

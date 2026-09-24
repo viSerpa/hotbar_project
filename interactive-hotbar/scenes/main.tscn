@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://2qxhhussji3l"]
+
+[ext_resource type="Script" uid="uid://bg64jbrk10rik" path="res://scripts/main.gd" id="1_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://dj5hjst2786g8" path="res://scenes/hotbar.tscn" id="2_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://b1lqrvh7u3fmj" path="res://scenes/sword.tscn" id="2_o6xl0"]
+[ext_resource type="Texture2D" uid="uid://caecvu85fnjpu" path="res://icon.svg" id="3_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://cxug3otjeoosm" path="res://scenes/items.tscn" id="3_tefeu"]
+[ext_resource type="PackedScene" uid="uid://dp1h28d16q72e" path="res://scenes/bow.tscn" id="3_tipki"]
+[ext_resource type="PackedScene" uid="uid://nebhusgswemh" path="res://scenes/shield.tscn" id="4_85g3d"]
+
+[node name="Main" type="Node" unique_id=1638076408 node_paths=PackedStringArray("hotbar", "arrow", "items")]
+script = ExtResource("1_jyhfs")
+hotbar = NodePath("Hotbar")
+arrow = NodePath("Arrow")
+items = NodePath("Items")
+sword_img = ExtResource("2_o6xl0")
+bow_img = ExtResource("3_tipki")
+shield_img = ExtResource("4_85g3d")
+
+[node name="Hotbar" parent="." unique_id=541154035 instance=ExtResource("2_jyhfs")]
+box_amount = 9
+
+[node name="Items" parent="." unique_id=99615443 instance=ExtResource("3_tefeu")]
+
+[node name="Arrow" type="Sprite2D" parent="." unique_id=1325753364]
+visible = false
+modulate = Color(0, 0, 0, 1)
+position = Vector2(32, -32)
+scale = Vector2(0.03125, 0.25)
+texture = ExtResource("3_tbgi4")
+
+[node name="Polygon2D" type="Polygon2D" parent="Arrow" unique_id=1920874835]
+position = Vector2(0, 85.333336)
+polygon = PackedVector2Array(0, 0, -256, -42.666668, 256, -42.666668)
+
+[connection signal="bow_selected" from="Items" to="." method="_on_items_bow_selected"]
+[connection signal="shield_selected" from="Items" to="." method="_on_items_shield_selected"]
+[connection signal="sword_selected" from="Items" to="." method="_on_items_sword_selected"]

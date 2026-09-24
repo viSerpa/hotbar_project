@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dp1h28d16q72e"]
+
+[ext_resource type="Texture2D" uid="uid://dhe75xhqxc8i6" path="res://assets/bow.png" id="1_vt0lb"]
+
+[node name="Bow" type="Sprite2D" unique_id=1147115716]
+scale = Vector2(0.120300755, 0.11130434)
+texture = ExtResource("1_vt0lb")
+centered = false
