@@ -11,7 +11,7 @@ Left click on hotbar slot then press left click on any of the three images
 
 ## Setup & Installation
 Prerequisites: Godot version 4.7 or later
-Clone the repo: git clone https://github.com
+Clone the repo: [git clone https://github.com](https://github.com/viSerpa/hotbar_project.git)
 Run the game: press F5 to start
 
 ## What I Learned
