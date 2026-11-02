@@ -7,12 +7,12 @@ Interactive Hotbar - A 2D interactive hotbar built using Godot & GDScript.
 
 ## How to Play
 Controls:
-Left click on hotbar slot then press left click on any of the three images
+- Left click on hotbar slot then press left click on any of the three images
 
 ## Setup & Installation
-Prerequisites: Godot version 4.7 or later
-Clone the repo: [git clone https://github.com](https://github.com/viSerpa/hotbar_project.git)
-Run the game: press F5 to start
+- **Prerequisites**: Godot version 4.7 or later
+- **Clone the repo**: (https://github.com/viSerpa/hotbar_project.git)
+- **Run the game**: press F5 to start
 
 ## What I Learned
 Dictionaries: Learned how to use dictionaries to instantly look up items
